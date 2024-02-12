@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Protest Riot', sans-serif;
+	height: 100vh;
+	background: linear-gradient(62deg, #fbab7e, #f7ce68);
+}
+
+h1 {
+	margin: 50px 0 30px;
+	text-align: center;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.faq {
+	background-color: transparent;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin: 20px 0;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+
+.faq.active {
+	background-color: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.faq.active::after {
+	content: '\f086';
+	font-family: 'Font Awesome 5 free';
+	color: darkcyan;
+	font-size: 3rem;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.faq-text {
+	display: none;
+	margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+	display: block;
+}
+
+.btn {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	padding: 0;
+	top: 30px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.btn .fa-times {
+	display: none;
+}
+
+.faq.active .btn .fa-times {
+	display: block;
+}
+
+.faq.active .btn .fa-chevron-down {
+	display: none;
+}
+
+.faq.active .btn {
+	background-color: grey;
+	color: #fff;
+}
