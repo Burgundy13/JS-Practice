@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app {
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.background {
+	background: url('bgd.jpg') no-repeat center center / cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	filter: blur(8px);
+	z-index: -1;
+}
+
+.card {
+	background-color: #fff;
+	box-shadow: 0 0 5px #000;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.card h1,
+.card p {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.card p {
+	margin-bottom: 30px;
+}
+
+.card input,
+.card label {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.card input {
+	margin: 8px 0 30px;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #ccc;
+}
+
+.card input:last-of-type {
+	margin-bottom: 0px;
+}
+
+.card .btn {
+	width: 100%;
+	color: #fff;
+	outline: none;
+	background-color: #000;
+	padding: 10px;
+	cursor: pointer;
+	border: 1px solid #000;
+	text-transform: uppercase;
+	transition: 0.25s ease all;
+	margin-top: 25px;
+}
+
+.card .btn:hover {
+	background-color: transparent;
+	color: #000;
+}
+
+.img-btn {
+	background-color: #fff;
+	color: rgb(0, 128, 255);
+	padding: 12px 22px;
+	border-radius: 5px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: none;
+}
+
+.img-btn:hover {
+	opacity: 0.9;
+}
+
+.wrong,
+.wrong-email {
+	color: red;
+	font-size: 10px;
+	display: none;
+}
