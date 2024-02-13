@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rent A Car</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<label for="cars">Choose car</label>
+					<select name="cars" id="cars">
+						<option value="">Cars</option>
+						<option value="audi">Audi a8 - 2019</option>
+						<option value="bmw">BMW x7 - 2022</option>
+						<option value="hyundai">Hyundai Tucson - 2022</option>
+						<option value="mercedes">Mercedes 2 400 -2020</option>
+					</select>
+				</div>
+				<div class="column">
+					<label for="date-1">Start date</label>
+					<input type="date" id="date-1" />
+				</div>
+				<div class="column">
+					<label for="date-2">End date</label>
+					<input type="date" id="date-2" />
+				</div>
+			</div>
+			<button id="submit">Calculate</button>
+			<div id="output">Choose your car and date</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
